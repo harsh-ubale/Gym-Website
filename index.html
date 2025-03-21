@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <style>
+      body {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url("image/main.jpg") no-repeat center center;
+        background-size: cover;
+        background-position-y: 0px;
+        /* this is set to bring image a liitle bit down */
+      }
+
+      .left {
+        display: inline-block;
+        /* border: 2px red solid; */
+        position: absolute;
+        left: 53px;
+        top: 12px;
+      }
+
+      .left img {
+        width: 100px;
+        margin: 4px;
+      }
+
+      .left div {
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 20px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      }
+
+      .mid {
+        /* border: 2px rgb(17, 226, 45) solid; */
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+      }
+
+      .right {
+        position: absolute;
+        right: 34px;
+        top: 37px;
+        display: inline-block;
+        /* border: 2px rgb(188, 224, 26) solid; */
+      }
+
+      .navbar {
+        display: inline-block;
+        width: 150%;
+      }
+
+      .navbar li {
+        display: inline-block;
+        font-size: 20px;
+      }
+
+      .navbar li a {
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+
+        padding: 8px;
+      }
+
+      .navbar li a:hover,
+      .navbar li a:active {
+        text-decoration: underline;
+        color: lightblue;
+      }
+
+      .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 12px;
+        font-size: 12px;
+        cursor: pointer;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-shrink: 2px;
+      }
+
+      .btn:hover {
+        background-color: lightseagreen;
+      }
+
+      .container {
+        border: 2px black solid;
+        padding: 2px 2px 2px 2px;
+        margin: auto auto;
+        margin-top: 8%;
+        margin-left: 55%;
+        border-radius: 30px;
+        width: 35%;
+      }
+
+      .container h1 {
+        text-align: center;
+      }
+
+      .form-group {
+        opacity: 65%;
+      }
+
+      .form-group input {
+        text-align: center;
+        display: block;
+        width: 95%;
+        padding: 5px;
+        /* border: 2px red solid; */
+        margin: 5px auto;
+        font-size: 20px;
+        border-radius: 10px;
+      }
+
+      .container button {
+        display: block;
+        margin: 10px auto;
+        width: 90%;
+      }
+
+      .offer {
+        margin-top: 5%;
+        background-color: black;
+        opacity: 90%;
+      }
+
+      .offer a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="headder">
+      <div class="left">
+        <img src="/image/Logo.jpg" alt="LOGO" />
+        <div>Harsh's Fitness</div>
+      </div>
+
+      <div class="mid">
+        <ul class="navbar" style="padding-left: 5px">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness-Calculator</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us Now</button>
+      </div>
+    </header>
+    <div class="offer">
+      <marquee behavior="active" direction="red"
+        ><a href="#">60% Offer For Preminium Membership. Buy Now</a></marquee
+      >
+    </div>
+
+    <div class="container">
+      <form action="nonaction.php">
+        <h1>Join Our Gym</h1>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Name" />
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Age" />
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Gender" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Email Address" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Number" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Loacality" />
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
